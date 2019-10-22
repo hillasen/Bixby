@@ -1,0 +1,13 @@
+action (Addmybook) {
+  description (__DESCRIPTION__)
+  collect {
+    input (isbn) {
+      type (Isbn)
+      min (Required) max (One)
+    }
+    input (dummyInput) {
+      type (viv.core.Integer)
+    }
+  }
+  output (my)
+}

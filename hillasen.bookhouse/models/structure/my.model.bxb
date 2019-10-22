@@ -1,0 +1,15 @@
+structure (my) {
+  description (__DESCRIPTION__)
+  property (isbn) {
+    type (Isbn)
+    min (Optional) max (One)
+  }
+  property (log){
+    type (Log)
+    min (Optional) max (One)
+  }
+  property (Li){
+    type (li)
+    min (Optional) max (One)
+  }
+}

@@ -1,0 +1,4 @@
+enum (ti) {
+  description (__DESCRIPTION__)
+  
+}

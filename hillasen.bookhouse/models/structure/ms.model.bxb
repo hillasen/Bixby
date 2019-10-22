@@ -1,0 +1,38 @@
+structure (ms) {
+  property (title) {
+    type (Title)
+    min (Required) max (One)
+  }
+  property (author) {
+    type (Author)
+    min (Required) max (One)
+  }
+  property (rank) {
+    type (Rank)
+    min (Required) max (One)
+  }
+  property (category) {
+    type (Category)
+    min (Required) max (One)
+  }
+  property (link) {
+    type (Link)
+    min (Required) max (One)
+  }
+  property (isbn) {
+    type (Isbn)
+    min (Required) max (One)
+  }
+  property (description) {
+    type (Description)
+    min (Required) max (One)
+  }
+  property (price) {
+    type (Price)
+    min (Required) max (One)
+  }
+  property (cover) {
+    type (Cover)
+    min (Required) max (One)
+  }
+}

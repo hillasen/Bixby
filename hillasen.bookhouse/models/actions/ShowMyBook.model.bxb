@@ -1,0 +1,9 @@
+action (ShowMyBook) {
+  description (__DESCRIPTION__)
+  collect {
+    input (dummyInput) {
+      type (viv.core.Integer)
+    }
+  }
+  output (mybo)
+}

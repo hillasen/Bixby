@@ -1,0 +1,5 @@
+train (t-wcbx80qvhn45jp1yg8kbni3r2) {
+  utterance ("[g:FindBook] (인공신경망 첫걸음)[v:Title] 검색해줘")
+  plan (Y2BmkM3IzMlJLE7N00vKz8/OyC8tTtVzArKCUxOLkjMYpLFIu2XmpYCUMEhgkQzJLMlJZWBiYARiBiDJyAACUD4A)
+  last-modified (1571579733700)
+}

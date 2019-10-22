@@ -1,0 +1,78 @@
+result-view{
+  match: Recommand(this)
+  render {
+    layout {
+      section {
+        content {
+          if(exists(this.isbn))
+          {
+            
+          
+          for-each (this) {
+            as (score) {
+              cell-card{
+                slot1 {
+                  image {
+                    url ("#{value(score.cover)}")
+                    shape (Square)
+                 }
+                }
+                slot2{
+                  content{
+                    order (PrimarySecondary)
+                    primary("#{value(score.title)}")
+                    secondary("#{value(score.author)}")
+                  }
+                }
+                on-click{
+                  intent{
+                    goal: hillasen.bookhouse.DeepSearchAction
+                    value: hillasen.bookhouse.Df{
+                      isbn: $expr(score.isbn)
+                    }
+                      
+                    
+                      
+                  }
+                }
+              }
+              
+              
+              divider
+            }
+          }
+        }
+        else{
+          cell-card{
+              slot2
+              {
+                content{
+                  order (PrimarySecondary)
+                  primary("추천할 책이 없어요")
+                  secondary("마이북에 책이 등록되어 있는지 확인하세요")
+                }
+              }
+            }
+            cell-card{
+              slot2
+              {
+                content{
+                  order (PrimarySecondary)
+                  primary("마이북에 책이 있다면")
+                  secondary("마이북에 다른 책도 등록해 보세요")
+                }
+              }
+            }
+        }
+          
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("마이북 보여줘")
+    }
+    
+  }
+}

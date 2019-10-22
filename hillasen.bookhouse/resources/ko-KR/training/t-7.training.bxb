@@ -1,0 +1,5 @@
+train (t-71rfrca8r82jp24i148kdgu90) {
+  utterance ([g:RecommandBook] 책 추천해줘)
+  plan (Y2BikMnIzMlJLE7N00vKz8/OyC8tTtULSk3Oz81NzEthUMAn6wQUYmAEQgYoBpIA)
+  last-modified (1571287032334)
+}

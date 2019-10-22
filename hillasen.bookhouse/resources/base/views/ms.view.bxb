@@ -1,0 +1,73 @@
+result-view{
+  match: ms(this)
+  message{
+    template("이 책의 정보입니다. 제목은 #{value(this.title)}이며 리뷰는 10점 만점에 #{value(this.rank)}점 입니다.")
+  }                                                                                                                                                      
+  render{
+    
+    layout{
+      
+      section{
+        
+        content{
+          image-card{
+            aspect-ratio (3:4)
+            title-area{
+              halign (Start)
+              slot1{
+                text{
+                  value("#{value(this.title)}")
+                  style(Title_M)
+                }
+              }
+              slot2{
+                single-line{
+                text{
+                  value("10점 만점에 #{value(this.rank)}점 • 가격:  #{value(this.price)} KRW")
+                  style(Detail_L)
+                }
+                }
+                
+                
+              }
+            }
+            image-url("#{value(this.cover)}")
+          }
+          attribution-link {
+            label {
+                template ("웹사이트로 이동")
+            }
+            url ("#{value(this.link)}")
+        }
+        cell-card{
+                
+                slot2{
+                  content{
+                    order (PrimarySecondary)
+                    primary("마이북에서 삭제")
+                    secondary("")
+                  }
+                }
+                on-click{
+                  intent{
+            goal: hillasen.bookhouse.Del
+            value: BookData$expr(this)
+            
+
+          }
+                }
+              }
+          
+        
+        }
+      }
+    }
+    
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("마이북 보여줘")
+    }
+    
+  }
+}

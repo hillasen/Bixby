@@ -1,0 +1,20 @@
+capsule {
+  id (hillasen.bookhouse)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR) // Korean(South Korea)
+  }
+  store-sections{
+    section (Productivity)
+    section (Shopping)
+
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+    modern-default-view-behavior
+    no-filtering-with-validation
+  }
+}

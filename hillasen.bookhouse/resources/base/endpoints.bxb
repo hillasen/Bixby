@@ -1,0 +1,33 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (FindBook) {
+      accepted-inputs (title, author, category, isbn, dummyInput, $vivContext)
+      local-endpoint (ActionScript/FindBook.js)
+    }
+    action-endpoint (Addmybook) {
+      accepted-inputs (isbn, dummyInput, $vivContext)
+      local-endpoint (ActionScript/AddMyBook.js)
+    }
+    action-endpoint (RecommandBook) {
+      accepted-inputs (dummyInput, $vivContext)
+      local-endpoint (ActionScript/RecommandBook.js)
+    }
+    action-endpoint (DeepSearchAction) {
+      accepted-inputs (isbn)
+      local-endpoint (ActionScript/DeepSearch.js)
+    }
+    action-endpoint (ShowMyBook) {
+      accepted-inputs (dummyInput, $vivContext)
+      local-endpoint (ActionScript/ShowMyBook.js)
+    }
+    action-endpoint (mybooksearch) {
+      accepted-inputs (isbn)
+      local-endpoint (ActionScript/mss.js)
+    }
+    action-endpoint (Del) {
+      accepted-inputs (isbn, dummyInput, $vivContext)
+      local-endpoint (ActionScript/Del.js)
+    }
+    
+  }
+}

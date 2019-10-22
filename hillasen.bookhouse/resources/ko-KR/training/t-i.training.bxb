@@ -1,0 +1,5 @@
+train (t-i47vfrcjvvtg96bw8b778180l) {
+  utterance ("[g:FindBook] (조선왕조실록)[v:Title] 찾아")
+  plan (Y2BmkM3IzMlJLE7N00vKz8/OyC8tTtVzArKCUxOLkjMYpLFIu2XmpYCUMEhgkQzJLMlJZWBiYARiBiDJyAACUD4A)
+  last-modified (1571578691476)
+}

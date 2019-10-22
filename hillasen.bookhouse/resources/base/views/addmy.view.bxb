@@ -1,0 +1,12 @@
+result-view{
+  match: my(this)
+  message{
+    template("등록하였습니다")
+  }                                                                                                                                                      
+  conversation-drivers {
+    conversation-driver {
+      template ("마이북 보여줘")
+    }
+    
+  }
+}

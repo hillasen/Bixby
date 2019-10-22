@@ -1,0 +1,3 @@
+integer (Price) {
+  description (__DESCRIPTION__)
+}

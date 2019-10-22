@@ -1,0 +1,7 @@
+structure (Df) {
+  description (__DESCRIPTION__)
+  property (isbn) {
+    type (Isbn)
+    min (Required) max (One)
+  }
+}

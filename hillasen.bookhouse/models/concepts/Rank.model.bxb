@@ -1,0 +1,3 @@
+integer (Rank) {
+  description (__DESCRIPTION__)
+}

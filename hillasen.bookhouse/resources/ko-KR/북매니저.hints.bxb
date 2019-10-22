@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    utterance (책 추천해줘)
+    utterance (조선왕조실록 검색해줘)
+    utterance (마이북 보여줘)
+  }
+}

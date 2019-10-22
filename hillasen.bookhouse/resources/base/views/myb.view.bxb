@@ -1,0 +1,68 @@
+result-view{
+  match: mybo(this)
+  render {
+    layout {
+      section {
+        content {
+          if(exists(this.isbn))
+          {
+            
+          
+          for-each (this) {
+            as (score) {
+              cell-card{
+                slot1 {
+                  image {
+                    url ("#{value(score.cover)}")
+                    shape (Square)
+                 }
+                }
+                slot2{
+                  content{
+                    order (PrimarySecondary)
+                    primary("#{value(score.title)}")
+                    secondary("#{value(score.author)}")
+                  }
+                }
+                on-click{
+                  intent{
+                    goal: hillasen.bookhouse.mybooksearch
+                    value: hillasen.bookhouse.Df{
+                      isbn: $expr(score.isbn)
+                    }
+                      
+                    
+                      
+                  }
+                }
+              }
+              
+              
+              divider
+            }
+          }
+        }
+        else{
+          cell-card{
+              slot2
+              {
+                content{
+                  order (PrimarySecondary)
+                  primary("마이북에 아무것도 없어요")
+                  secondary("마이북에 책이 등록되어 있는지 확인하세요")
+                }
+              }
+            }
+        }
+          
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    conversation-driver {
+      template ("책 추천해줘")
+    }
+    
+  }
+}

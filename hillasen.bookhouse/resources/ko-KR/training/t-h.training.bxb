@@ -1,0 +1,10 @@
+train (t-h3ul405s6gq47brbfoew5u5mj) {
+  utterance ("[g:FindBook] (도그맨)[v:Title] 찾아줘")
+  plan (Y2BmkM3IzMlJLE7N00vKz8/OyC8tTtVzArKCUxOLkjMYpLFIu2XmpYCUMEhgkQzJLMlJZWBiYARiBiDJyAACUD4A)
+  last-modified (1571578679013)
+}
+train (t-hr5ytheck68ozgbj03z8ljex1) {
+  utterance ("[g:FindBook] (인공 신경망 첫걸음)[v:Title] 찾아줘")
+  plan (Y2BmkM3IzMlJLE7N00vKz8/OyC8tTtVzArKCUxOLkjMYpLFIu2XmpYCUMEhgkQzJLMlJZWBiYARiBiDJyAACUD4A)
+  last-modified (1571578688175)
+}

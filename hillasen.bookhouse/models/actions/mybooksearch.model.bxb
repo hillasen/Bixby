@@ -1,0 +1,11 @@
+action (mybooksearch) {
+  description (__DESCRIPTION__)
+  collect {
+    input (isbn) {
+      type (Isbn)
+      min (Optional) max (One)
+    }
+    
+  }
+  output (ms)
+}

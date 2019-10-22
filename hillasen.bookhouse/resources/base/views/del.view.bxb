@@ -1,0 +1,12 @@
+result-view{
+  match: del(this)
+  message{
+    template("삭제하였습니다")
+  }                                                                                                                                                      
+  conversation-drivers {
+    conversation-driver {
+      template ("마이북 보여줘")
+    }
+    
+  }
+}

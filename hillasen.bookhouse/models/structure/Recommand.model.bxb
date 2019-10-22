@@ -1,0 +1,39 @@
+structure (Recommand) {
+  description (__DESCRIPTION__)
+  property (title) {
+    type (Title)
+    min (Optional) max (Many)
+  }
+  property (author) {
+    type (Author)
+    min (Optional) max (Many)
+  }
+  property (rank) {
+    type (Rank)
+    min (Optional) max (Many)
+  }
+  property (category) {
+    type (Category)
+    min (Optional) max (Many)
+  }
+  property (link) {
+    type (Link)
+    min (Optional) max (Many)
+  }
+  property (isbn) {
+    type (Isbn)
+    min (Optional) max (Many)
+  }
+  property (description) {
+    type (Description)
+    min (Optional) max (Many)
+  }
+  property (price) {
+    type (Price)
+    min (Optional) max (Many)
+  }
+  property (cover) {
+    type (Cover)
+    min (Optional) max (Many)
+  }
+}

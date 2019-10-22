@@ -1,0 +1,5 @@
+train (t-kzgjdva78ut30aspci16t4t0r) {
+  utterance ("[g:FindBook] (알라딘)[v:Title] 검색해줘")
+  plan (Y2BmkM3IzMlJLE7N00vKz8/OyC8tTtVzArKCUxOLkjMYpLFIu2XmpYCUMEhgkQzJLMlJZWBiYARiBiDJyAACUD4A)
+  last-modified (1571578697141)
+}

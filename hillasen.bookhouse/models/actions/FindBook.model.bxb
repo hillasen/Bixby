@@ -1,0 +1,26 @@
+action (FindBook) {
+  type(Search)
+  description (Find the book)
+  collect {
+    input (author) {
+      type (Author)
+      min (Optional) max (One)
+    }
+    input (category) {
+      type (Category)
+      min (Optional) max (One)
+    }
+    input (isbn) {
+      type (Isbn)
+      min (Optional) max (One)
+    }
+    input (title) {
+      type (Title)
+      min (Optional) max (One)
+    }
+    input (dummyInput) {
+      type (viv.core.Integer)
+    }
+  }
+  output (BookSearch)
+}

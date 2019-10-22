@@ -1,0 +1,49 @@
+result-view{
+  match: BookSearch(this)
+  message{
+    template("책의 검색결과입니다")
+  }                                                                                                                                                      
+  render{
+    layout {
+      section {
+        content {
+          
+          for-each (this) {
+            as (score) {
+              cell-card{
+                slot1 {
+                  image {
+                    url ("#{value(score.cover)}")
+                     shape (Square)
+                 }
+              }
+                slot2{
+                  content{
+                    order (PrimarySecondary)
+                    primary("#{value(score.title)}")
+                    secondary("#{value(score.description)}")
+                  }
+                }
+                on-click{
+                  intent{
+                    goal: hillasen.bookhouse.DeepSearchAction
+                    value: hillasen.bookhouse.Df{
+                      isbn: $expr(score.isbn)
+                    }
+                      
+                    
+                      
+                  }
+                }
+              }
+              
+              
+              divider
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

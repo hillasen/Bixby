@@ -1,0 +1,22 @@
+capsule-info {
+  display-name (북매니저)
+  developer-name (힐라슨 HILLASEN)
+  icon-asset (/images/bookhouse.png)
+  description ("언제나 당신만을 위한 책을 추천하고, 저장하고, 검색해드려요")
+  website-url (http://hillasen/com)
+  terms-url (http://hillasen.com/eula/)
+  search-keywords{
+    keyword (책)
+    keyword (책 추천)
+    keyword (책 검색)
+    keyword (북)
+    keyword (독서)
+    keyword (독서 추천)
+    keyword (독서 리스트)
+  }
+  dispatch-name (북 매니저)
+  dispatch-aliases{
+    alias (책 추천해줘)
+    alias (마이북 보여줘)
+  }
+}

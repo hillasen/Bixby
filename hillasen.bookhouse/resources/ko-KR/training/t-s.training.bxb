@@ -1,0 +1,5 @@
+train (t-s62xqralyn99rys4mha6sno54) {
+  utterance ("[g:FindBook] (조선왕조실톡)[v:Title] 검색해")
+  plan (Y2BmkM3IzMlJLE7N00vKz8/OyC8tTtVzArKCUxOLkjMYpLFIu2XmpYCUMEhgkQzJLMlJZWBiYARiBiDJyAACUD4A)
+  last-modified (1571579730543)
+}
